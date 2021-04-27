@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+<link rel="stylesheet" href="speedreader.css">
+
+  </head>
+  <body>
+
+
+    <h1 style=" text-align:center; font-size:29.3px;" >  SpeedReader</h1>
+
+
+    <textarea id="op" name="name" rows="10" cols="80"></textarea>
+    <br>
+<div id="center">
+
+    <fieldset>
+    <label style="float: left;">Play Controls:</label>
+
+    	<div>
+        <button id="start" onclick="startt()">Play</button>
+        <button id="stop" onclick="stop()" >Stop</button>
+
+    	</div>
+
+    </fieldset>
+
+    <fieldset>
+    <label style="float: left;">Speed:</label>
+
+
+      <div>
+<select  name="">
+  <option onclick="speed=500;" >50 wpm</option>
+  <option onclick="speed=200;" >300 wpm</option>
+  <option onclick="speed=171;">350 wpm</option>
+  <option onclick="speed=150;" >400 wpm</option>
+  <option onclick="speed=133;" >450 wpm</option>
+  <option onclick="speed=120;" >500 wpm</option>
+
+</select>
+
+
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+    <label style="float: left;">Size:</label>
+<br>
+      <div class="in">
+<input type="radio" name="" onclick="document.getElementById('op').style.fontSize='36pt'" value="Medium" checked>
+<label for="Medium">Medium</label>
+<input type="radio" name="" onclick="document.getElementById('op').style.fontSize='48pt'" value="Big">
+<label for="Big">Big</label>
+<input type="radio" name="" onclick="document.getElementById('op').style.fontSize='60pt'"value="Bigger">
+<label for="Bigger">Bigger</label>
+
+
+      </div>
+      </fieldset>
+
+</div>
+  <label style="margin:150px;" >Input Text:</label> <br>
+<textarea id="i/o" name="name" rows="10" cols="80"></textarea>
+
+
+<script src="speedreader.js">
+</script>
+
+  </body>
+
+
+
+
+</html>
